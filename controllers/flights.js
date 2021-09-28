@@ -1,3 +1,4 @@
+const flight = require("../models/flight");
 const Flight = require("../models/flight");
 // const newFlight = new Flight();
 
@@ -17,6 +18,7 @@ function index(req, res){
 
     Flight.find({}, function (err, flightDocuments){
         res.render("flights/index", {flights: flightDocuments});
+        console.log(flightDocuments, "<--- movie documnets")
     });
 }
 
