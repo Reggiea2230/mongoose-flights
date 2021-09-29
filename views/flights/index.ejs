@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1>Flights</h1>
-  <table>
+  <table id="list">
     <thead>
       <tr>
         <th>Airline</th>
@@ -19,7 +19,7 @@
       </tr>
     </thead>
     <tbody>
-      <% flights.forEach(function(f) { %> 
+      <% flightDocuments.forEach(f => { %> 
         <tr>
           <td><%= f.airlines %></td>
           <td><%= f.flightNo %></td>
